@@ -1,0 +1,15 @@
+Skripta ob zagonu sprejme 3 parametre.
+Prvi parameter pot do izbranega folderja, v katerem želimo brisati stare datoteke.
+Drugi in tretji parameter pa sta celo število in časovna enota, ki predstavljata maksimalno starost datotek.
+Po zagonu skripte bodo v izbranem folderju izbrisane vse datoteke, katerih starost presega vnešeno maksimalno starost.
+Izbrišejo se tudi vsi vsebovani folderji, ki po brisanju ostanejo prazni. 
+
+Seznam dovoljenih časovnih enot:
+- Y (leto)
+- M (mesec)
+- D (dan)
+- h (ura)
+- m (minuta)
+- s (sekunda)
+
+Primer uporabe: python OldFileRemover.py C:\Users\prakadp1\PycharmProjects\OldFileRemover\TestFolder 2 M
