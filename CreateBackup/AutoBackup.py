@@ -37,25 +37,5 @@ def upload_blob():
         blob_client.upload_blob(data, overwrite=True)
     print(f"Uploaded {file_path} to {blob_name} in {container_name} container.")
 
-def download_blob():
-    # Create a BlobServiceClient object
-    #blob_service_client = BlobServiceClient.from_connection_string(connection_string)
-    blob_service_client = BlobServiceClient(account_url=connection_url)
-
-    # Create a BlobClient object
-    blob_client = blob_service_client.get_blob_client(container=container_name, blob=blob_name)
-
-    # Define the download path
-    download_file_path = r'C:\Users\prakadp1\PycharmProjects\AutoBackup\Output.xlsx'
-
-    # Download the blob
-    with open(download_file_path, 'wb') as download_file:
-        download_file.write(blob_client.download_blob().readall())
-    print(f"Downloaded blob to {download_file_path}.")
-
 if __name__ == '__main__':
-    #parser = argparse.ArgumentParser(description="Accept file path.")
-    #parser.add_argument("filepath", type=str, help="The file path.")
-    #args = parser.parse_args()
-    #file_path = args.filepath
     upload_blob()
