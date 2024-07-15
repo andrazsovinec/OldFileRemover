@@ -1,0 +1,8 @@
+{
+    "connection_string": "<your_connection_string(key)>",
+    "connection_url": "<your_url_connection_to_azure_storage>",
+    "use_key": "<use_connection_key_instead_of_url(true_or_false)>", 
+    "container_name": "container_name",
+    "blob_name": "blob_name",
+    "file_path": "path_to_the_file"
+}
